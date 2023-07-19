@@ -5,8 +5,8 @@ sudo yum update -y
 sudo yum upgrade -y
 echo "Installing Docker. Please wait."
 sudo yum install -y yum-utils
-sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
-sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 echo "Starting Docker. Please wait."
 sudo systemctl start docker
 echo "Adding user to the docker group. Please wait."
